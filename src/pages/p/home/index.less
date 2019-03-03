@@ -1,0 +1,50 @@
+.container {
+
+  .stat-container {
+    text-align: center;
+    height: 112px;
+    position: relative;
+    .stat {
+      position: absolute;
+      top: 34px;
+      left: 120px;
+      width: calc(100% - 136px);
+      display: flex;
+      .category {
+        padding: 0 8px 0 8px;
+        display: inline-block;
+        flex: 1;
+        .name {
+          font-size: 12px;
+          color: rgba(0,0,0,0.45);
+        }
+        .value {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  .desc {
+    .name {
+      font-size: 14px;
+    }
+    .value {
+      padding-top: 4px;
+      color: rgba(0,0,0,0.45);
+      font-size: 13px;
+    }
+  }
+
+  .func-container {
+    display:flex;
+    flex-wrap: wrap;
+    .func {
+      width: calc(calc(100% / 3) - 10px);
+      margin:5px;
+      height:60px;
+      box-sizing: border-box;
+    }
+  }
+
+}
